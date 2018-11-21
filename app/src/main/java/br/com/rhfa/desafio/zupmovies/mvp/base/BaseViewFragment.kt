@@ -3,7 +3,6 @@ package br.com.rhfa.desafio.zupmovies.mvp.base
 import android.content.Intent
 import android.os.Bundle
 
-
 interface BaseViewFragment : BaseView {
 
     fun gotoNextScreen(cls: Class<*>)

@@ -1,18 +1,12 @@
 package br.com.rhfa.desafio.zupmovies
 
 import android.app.Activity
-import br.com.rhfa.desafio.zupmovies.domain.Movie
 import br.com.rhfa.desafio.zupmovies.mvp.base.BaseView
 import br.com.rhfa.desafio.zupmovies.mvp.base.BaseViewFragment
 import br.com.rhfa.desafio.zupmovies.mvp.presenter.MainPresenter
-import br.com.rhfa.desafio.zupmovies.mvp.presenter.MoviePresenterImpl
-import br.com.rhfa.desafio.zupmovies.mvp.presenter.MoviesPresenter
 import br.com.rhfa.desafio.zupmovies.mvp.view.MainView
-import br.com.rhfa.desafio.zupmovies.mvp.view.MovieView
 import br.com.rhfa.desafio.zupmovies.views.activities.AbstractBottomNavigationBarActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import org.androidannotations.annotations.Bean
-import org.androidannotations.annotations.EActivity
 
 open class MainActivity : AbstractBottomNavigationBarActivity<MainPresenter>(), MainView {
     override fun getBaseView(): BaseView {

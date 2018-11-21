@@ -1,7 +1,5 @@
 package br.com.rhfa.desafio.zupmovies.mvp.presenter
 
-import android.app.Activity
-
 import br.com.rhfa.desafio.zupmovies.mvp.base.BasePresenter
 import br.com.rhfa.desafio.zupmovies.mvp.base.BaseView
 import br.com.rhfa.desafio.zupmovies.mvp.view.MainView

@@ -1,12 +1,10 @@
 package br.com.rhfa.desafio.zupmovies.mvp.model
 
 import android.content.Context
-
-import java.sql.SQLException
-
 import br.com.rhfa.desafio.zupmovies.database.DataBaseFactory
 import br.com.rhfa.desafio.zupmovies.database.MovieDaoImpl
 import br.com.rhfa.desafio.zupmovies.domain.Movie
+import java.sql.SQLException
 
 class FindMovesOfflineModelImpl(private val context: Context) : FindMoviesOfflineModel {
     private val movieDao: MovieDaoImpl

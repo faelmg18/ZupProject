@@ -2,7 +2,7 @@ package br.com.rhfa.desafio.zupmovies.database
 
 import android.content.Context
 
-class DataBaseFactory (context: Context) {
+class DataBaseFactory(context: Context) {
     private val databaseManager: DatabaseManager = DatabaseManager.init(context)
 
     val createMoveDao: MovieDaoImpl

@@ -4,9 +4,6 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import br.com.rhfa.desafio.zupmovies.mvp.base.BasePresenter
 import br.com.rhfa.desafio.zupmovies.mvp.base.BaseView
-import org.androidannotations.annotations.AfterViews
-import org.androidannotations.annotations.EActivity
-import org.androidannotations.annotations.UiThread
 
 
 abstract class BaseActivity<out T : BasePresenter> : AppCompatActivity() {
@@ -31,7 +28,6 @@ abstract class BaseActivity<out T : BasePresenter> : AppCompatActivity() {
 
         myOnCreate()
     }
-
 
     fun getPresenter(): T {
         return this.presenter!!

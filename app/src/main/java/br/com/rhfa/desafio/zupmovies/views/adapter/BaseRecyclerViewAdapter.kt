@@ -1,11 +1,11 @@
 package br.com.rhfa.desafio.zupmovies.views.adapter
 
 import android.support.v7.widget.RecyclerView
+import android.support.v7.widget.RecyclerView.Adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import br.com.rhfa.desafio.zupmovies.mvp.base.BasePresenter
-import android.support.v7.widget.RecyclerView.Adapter
 
 abstract class BaseRecyclerViewAdapter<T, VH : RecyclerView.ViewHolder>(private var dataList: MutableList<T>?, val basePresenterImpl: BasePresenter) : Adapter<VH>() {
 
@@ -16,7 +16,6 @@ abstract class BaseRecyclerViewAdapter<T, VH : RecyclerView.ViewHolder>(private 
     protected abstract fun myOnBindViewHolder(holder: VH, position: Int, item: T)
 
     protected fun onClean() {}
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
         val itemView = LayoutInflater.from(parent.context)

@@ -34,7 +34,6 @@ abstract class BaseFragments<T : BasePresenter> : Fragment(), BaseViewFragment {
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
-        // Inflate the layout for this fragment
         mView = inflater.inflate(layoutId(),
                 container, false)
 

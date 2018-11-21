@@ -13,12 +13,6 @@ class MoviesAdapter(dataList: MutableList<Movie>, presenter: MoviesPresenter) : 
         holder.bind(item)
     }
 
-
-    /*@Override
-    protected int getLayoutId() {
-        return R.layout.git_repository_item_adapter;
-    }*/
-
     override fun layoutId(): Int {
         return 0
     }

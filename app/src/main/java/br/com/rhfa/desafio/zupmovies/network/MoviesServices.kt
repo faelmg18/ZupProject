@@ -1,15 +1,12 @@
 package br.com.rhfa.desafio.zupmovies.network
 
 
-import com.br.rhf.restretrofit.communication.APIClientResponseListener
-
-import java.util.ArrayList
-
 import br.com.rhfa.desafio.zupmovies.communucation.BaseAPIClient
 import br.com.rhfa.desafio.zupmovies.communucation.services_interface.MoviesSerivceInterface
 import br.com.rhfa.desafio.zupmovies.domain.Movie
 import br.com.rhfa.desafio.zupmovies.mvp.base.BasePresenter
 import br.com.rhfa.desafio.zupmovies.mvp.presenter.MoviesPresenter
+import com.br.rhf.restretrofit.communication.APIClientResponseListener
 import retrofit2.Call
 
 class MoviesServices(private val basePresenter: BasePresenter) : BaseAPIClient<MoviesSerivceInterface>(basePresenter) {

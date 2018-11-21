@@ -20,7 +20,6 @@ abstract class AbstractBottomNavigationBarActivity<T : BasePresenter> : BaseActi
         navigation.selectedItemId = R.id.navigation_find_moves
     }
 
-
     protected val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_home -> {
@@ -34,7 +33,6 @@ abstract class AbstractBottomNavigationBarActivity<T : BasePresenter> : BaseActi
         }
         false
     }
-
 
     protected fun gotoFragment(toFragment: Class<out Fragment>, bundle: Bundle?, itemId: Int) {
 

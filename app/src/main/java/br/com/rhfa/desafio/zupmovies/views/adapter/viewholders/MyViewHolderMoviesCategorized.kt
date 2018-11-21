@@ -1,12 +1,10 @@
 package br.com.rhfa.desafio.zupmovies.views.adapter.viewholders
 
 import android.view.View
-
-import java.util.LinkedHashMap
-
 import br.com.rhfa.desafio.zupmovies.domain.CategorizedMovies
 import br.com.rhfa.desafio.zupmovies.domain.Movie
 import br.com.rhfa.desafio.zupmovies.mvp.base.BasePresenter
+import java.util.*
 
 class MyViewHolderMoviesCategorized(itemView: View, presenter: BasePresenter) : AbstractViewHolder<CategorizedMovies>(itemView, presenter) {
 
@@ -15,6 +13,5 @@ class MyViewHolderMoviesCategorized(itemView: View, presenter: BasePresenter) : 
     }
 
     override fun bind(item: CategorizedMovies) {
-
     }
 }

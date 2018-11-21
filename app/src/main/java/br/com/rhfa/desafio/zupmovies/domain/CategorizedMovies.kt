@@ -1,6 +1,6 @@
 package br.com.rhfa.desafio.zupmovies.domain
 
-import java.util.ArrayList
+import java.util.*
 
 class CategorizedMovies(private val movies: ArrayList<Movie>?, private val genre: String) {
 
