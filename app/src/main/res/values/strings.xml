@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ZupMovies</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="movie_name_hint">Digite o nome do filme, seriado, documentário etc.</string>
+    <string name="movie_not_found">Filme não encontrado</string>
+    <string name="title_find_moves">Buscar Filmes</string>
+    <string name="movie_saved">Filme Salvo</string>
+    <string name="movie_dont_save">Não foi possível salvar o filme nos favoritos</string>
+</resources>
