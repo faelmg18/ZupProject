@@ -39,7 +39,7 @@ abstract class BaseFragments<T : BasePresenter> : Fragment(), BaseViewFragment {
                 container, false)
 
         presenter = newPresenter()
-        
+
         presenter!!.setView(this)
         myOnCreate(mView, savedInstanceState)
 
